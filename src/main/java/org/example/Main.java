@@ -1,19 +1,30 @@
 package org.example;
 
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        // Press Opt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        Shape s1 = new Circle("red", false, 5.5);  // Upcast Circle to Shape
+        System.out.println(s1);                    // which version?
+        System.out.println(s1.getArea());          // which version?
+        System.out.println(s1.getPerimeter());     // which version?
+        System.out.println(s1.getColor());
+        System.out.println(s1.isFilled());
+        System.out.println(((Circle) s1).getRadius());
 
-        // Press Ctrl+R or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        Circle c1 = (Circle)s1;                   // Downcast back to Circle
+        System.out.println(c1);
+        System.out.println(c1.getArea());
+        System.out.println(c1.getPerimeter());
+        System.out.println(c1.getColor());
+        System.out.println(c1.isFilled());
+        System.out.println(c1.getRadius());
 
-            // Press Ctrl+D to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Cmd+F8.
-            System.out.println("i = " + i);
-        }
+
+
+        Shape s4 = new Square(6.6);     // Upcast
+        System.out.println(s4);
+        System.out.println(s4.getArea());
+        System.out.println(s4.getColor());
+        System.out.println(((Square) s4).getSide());
+
     }
 }
