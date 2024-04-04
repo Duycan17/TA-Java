@@ -98,19 +98,6 @@ if (file.isDirectory()) {
 </code>
 </pre>
 
-<h2>Sử Dụng</h2>
-
-<p>Hãy thoải mái sao chép repository này và khám phá ví dụ được cung cấp.</p>
-
-<pre>
-<code>
-git clone https://github.com/Duycan17/TA-Java.git
-</code>
-</pre>
-
-<h2>Giấy Phép</h2>
-
-<p>Dự án này được cấp phép theo Giấy Phép MIT - xem tệp <a href="LICENSE">LICENSE</a> để biết chi tiết.</p>
 
 </body>
 </html>
